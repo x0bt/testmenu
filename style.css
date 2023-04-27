@@ -1,3 +1,10 @@
 body {
 	background-color: var(--tg-theme-bg-color);
 }
+.main-container {
+  width: 95vw;
+  height: 95vh;
+  margin: 2% auto;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom right, #ad03fc, #5e03fc);
+}
