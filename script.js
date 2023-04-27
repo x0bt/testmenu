@@ -1,2 +1,2 @@
 let tg = window.Telegram.WebApp;
-print(tg.initData);
+print(tg.initData());
