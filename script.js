@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("linkenabled").innerHTML = "· ссылки: " + link_enabled;
   });
 
-
 function changeTab(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tab");
