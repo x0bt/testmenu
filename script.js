@@ -13,14 +13,14 @@ const link_enabled = urlParams.get('le')
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("group").innerHTML = "Целевая группа: " + group;
     document.getElementById("admin").innerHTML = "Админ: " + admin;
-    document.getElementById("slow-mode").innerHTML = "· медленный режим: " + slow_mode;
-    document.getElementById("warn-limit").innerHTML = "· варн-лимит: " + warn_limit;
-    document.getElementById("warn-period").innerHTML = "· варн-период: " + warn_period;
-    document.getElementById("warn-restriction").innerHTML = "· варн-наказание: " + warn_restriction;
-    document.getElementById("autokick-muted").innerHTML = "· автокик замученных: " + autokick_muted;
-    document.getElementById("min-reg-time").innerHTML = "· минрег: " + min_reg_time;
-    document.getElementById("bots-enabled").innerHTML = "· боты: " + bots_enabled;
-    document.getElementById("link-enabled").innerHTML = "· ссылки: " + link_enabled;
+    document.getElementById("slowmode").innerHTML = "· медленный режим: " + slow_mode;
+    document.getElementById("warnlimit").innerHTML = "· варн-лимит: " + warn_limit;
+    document.getElementById("warnperiod").innerHTML = "· варн-период: " + warn_period;
+    document.getElementById("warnrestriction").innerHTML = "· варн-наказание: " + warn_restriction;
+    document.getElementById("autokickmuted").innerHTML = "· автокик замученных: " + autokick_muted;
+    document.getElementById("minregtime").innerHTML = "· минрег: " + min_reg_time;
+    document.getElementById("botsenabled").innerHTML = "· боты: " + bots_enabled;
+    document.getElementById("linkenabled").innerHTML = "· ссылки: " + link_enabled;
   });
 
 
