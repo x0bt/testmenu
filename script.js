@@ -2,9 +2,25 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const group = urlParams.get('group')
 const admin = urlParams.get('admin')
+const slow_mode = urlParams.get('sm')
+const warn_limit = urlParams.get('wl')
+const warn_period = urlParams.get('wp')
+const warn_restriction = urlParams.get('wr')
+const autokick_muted = urlParams.get('am')
+const min_reg_time = urlParams.get('mrt')
+const bots_enabled = urlParams.get('be')
+const link_enabled = urlParams.get('le')
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("group").innerHTML = "Целевая группа: " + group;
     document.getElementById("admin").innerHTML = "Админ: " + admin;
+    document.getElementById("slow-mode").innerHTML = "· медленный режим: " + slow_mode;
+    document.getElementById("warn-limit").innerHTML = "· варн-лимит: " + warn_limit;
+    document.getElementById("warn-period").innerHTML = "· варн-период: " + warn_period;
+    document.getElementById("warn-restriction").innerHTML = "· варн-наказание: " + warn_restriction;
+    document.getElementById("autokick-muted").innerHTML = "· автокик замученных: " + autokick_muted;
+    document.getElementById("min-reg-time").innerHTML = "· минрег: " + min_reg_time;
+    document.getElementById("bots-enabled").innerHTML = "· боты: " + bots_enabled;
+    document.getElementById("link-enabled").innerHTML = "· ссылки: " + link_enabled;
   });
 
 
