@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
   }
 body {
 	background-color: var(--tg-theme-bg-color);
@@ -215,4 +217,13 @@ a {
     height: 100%;
     z-index: -1;
     transition: 0.5s;
+}
+.tab {
+    display:none;
+}
+.text {
+    color: white;
+    position: relative;
+    text-align: left;
+    left: 23px;
 }

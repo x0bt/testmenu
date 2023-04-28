@@ -12,22 +12,30 @@
                     <span class="button button-toggle"></span>
                 </label>
                 <nav class="nav">
-                    <a class="nav-item" href="">Основное</a>
-                    <a class="nav-item" href="">Статистика</a>
-                    <a class="nav-item" href="">Участники</a>
-                    <a class="nav-item" href="">Настройки</a>
+                    <a class="nav-item" onclick="changeTab(event, 'status')" id="default-open">Основное</a>
+                    <a class="nav-item" onclick="changeTab(event, 'stats')">Статистика</a>
+                    <a class="nav-item" onclick="changeTab(event, 'members')">Участники</a>
+                    <a class="nav-item" onclick="changeTab(event, 'settings')">Настройки</a>
                 </nav>
-            
                 <section class="main-content">
-                    
-                        <h2>p</h2>
-                        <h2>p</h2>
-                        <h2>p</h2>
-                        <h2>p</h2>
-                        <h2>p</h2>
-                    
+                    <div id="status" class="tab">
+                        <p id="group" class="text">Целевая группа: null</p>
+                        <p id="admin" class="text">Админ: null</p>
+                    </div>
+                    <div id="stats" class="tab">
+                        <p>Статистика</p>
+                    </div>
+                    <div id="members" class="tab">
+                        <p>Участники</p>
+                    </div>
+                    <div id="settings" class="tab">
+                        <p>Настройки</p>
+                    </div>
                 </section>
             </div>
         </div>
+        <script>
+            document.getElementById("default-open").click();
+        </script>
     </body>
 </html>
