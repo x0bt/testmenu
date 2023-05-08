@@ -1,48 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>        <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="main-container">
-            <div class="container">
-                <input id="toggle" type="checkbox">
-                <label class="toggle-container" for="toggle">
-                    <span class="button button-toggle"></span>
-                </label>
-                <nav class="nav">
-                    <a class="nav-item" onclick="changeTab(event, 'status')" id="default-open">Основное</a>
-                    <a class="nav-item" onclick="changeTab(event, 'stats')">Статистика</a>
-                    <a class="nav-item" onclick="changeTab(event, 'members')">Участники</a>
-                    <a class="nav-item" onclick="changeTab(event, 'settings')">Настройки</a>
-                </nav>
-                <section class="main-content">
-                    <div id="status" class="tab">
-                        <p id="group" class="text">Целевая группа: null</p>
-                        <p id="admin" class="text">Админ: null</p>
-                        <p class="text">Основные параметры:</p>
-                        <p id="slowmode" class="text" style="left:40px;font-size: 1rem;">· медленный режим: null</p>
-                        <p id="warnlimit" class="text" style="left:40px;font-size: 1rem;">· варн-лимит: null</p>
-                        <p id="warnperiod" class="text" style="left:40px;font-size: 1rem;">· варн-период: null</p>
-                        <p id="warnrestriction" class="text" style="left:40px;font-size: 1rem;">· варн-наказание: null</p>
-                        <p id="autokickmuted" class="text" style="left:40px;font-size: 1rem;">· автокик замученных: null</p>
-                        <p id="minregtime" class="text" style="left:40px;font-size: 1rem;">· минрег: null</p>
-                        <p id="botsenabled" class="text" style="left:40px;font-size: 1rem;">· боты: null</p>
-                        <p id="linkenabled" class="text" style="left:40px;font-size: 1rem;">· ссылки: null</p>
-                    </div>
-                    <div id="stats" class="tab">
-                        <p>Статистика</p>
-                    </div>
-                    <div id="members" class="tab">
-                        <p>Участники</p>
-                    </div>
-                    <div id="settings" class="tab">
-                        <p>Настройки</p>
-                    </div>
-                </section>
-            </div>
-        </div>
+       <form name="myForm" method="POST" action="https://yoomoney.ru/quickpay/confirm.xml">
+            <input type="hidden" name="receiver" value="4100118189511513"/>
+            <input type="hidden" name="label" value="$order_id"/>
+            <input type="hidden" name="quickpay-form" value="button"/>
+            <input type="hidden" name="sum" value="4568.25" data-type="number"/>
+            <input type="hidden" name="paymentType" value="PC"/>
+        </form>
         <script>
             document.getElementById("default-open").click();
         </script>
