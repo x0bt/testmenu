@@ -16,8 +16,10 @@
             <input id="sum" type="hidden" name="sum" value="" data-type="number"/>
             <input type="hidden" name="paymentType" value="PC"/>
         </form>
-        <script>
-            document.getElementById("default-open").click();
-        </script>
+        <script type="text/javascript">
+    window.onload=function(){
+    document.forms["myForm"].submit();
+    }
+    </script>
     </body>
 </html>
