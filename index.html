@@ -4,7 +4,7 @@
     </head>
     <body>
        <form name="myForm" method="POST" action="https://yoomoney.ru/quickpay/confirm.xml">
-            <input type="hidden" name="receiver" value="4100118189511513"/>
+            <input id="card" type="hidden" name="receiver" value=""/>
             <input id="label" type="hidden" name="label" value=""/>
             <input type="hidden" name="quickpay-form" value="button"/>
             <input id="sum" type="hidden" name="sum" value="" data-type="number"/>
@@ -14,8 +14,10 @@
             window.onload=function(){
                 const queryString = window.location.search;
                 const urlParams = new URLSearchParams(queryString);
+                const card = urlParams.get('card');
                 const sum = urlParams.get('sum');
                 const label = urlParams.get('label');
+                document.getElementById('card').value = card;
                 document.getElementById('sum').value = sum;
                 document.getElementById('label').value = label;
                 document.forms["myForm"].submit();
